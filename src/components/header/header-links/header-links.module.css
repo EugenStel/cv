@@ -1,0 +1,48 @@
+.header_icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 12px;
+    padding: 12px;
+}
+
+.header_icons_links {
+    width: 36px;
+    filter: invert(1);
+    transition: filter .2s ease;
+    margin-left: 20px;
+}
+
+.header_icons_links:hover {
+    filter: invert(78%) sepia(82%) saturate(370%) hue-rotate(128deg) brightness(95%) contrast(96%);
+}
+
+@media screen and (max-width: 1064px) {
+    .header_icons {
+        margin: 8px;
+        padding: 8px;
+    }
+    
+    .header_icons_links {
+        width: 30px;
+        margin-left: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header_icons {
+        margin: 4px;
+        padding: 4px;
+    }
+    
+    .header_icons_links {
+        width: 26px;
+        margin-left: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header_icons {
+        display: none;
+    }
+}

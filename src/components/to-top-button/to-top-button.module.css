@@ -1,0 +1,40 @@
+.to_top {
+    position: relative;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    bottom: 40px;
+    left: 40px;
+    box-shadow: 0 0 10px rgb(204, 204, 204);
+    animation: bounce 2s ease-in-out infinite alternate ;
+}
+
+.to_top:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .to_top {
+        width: 30px;
+        height: 30px;
+        bottom: 15px;
+        left: 15px;
+    }
+}

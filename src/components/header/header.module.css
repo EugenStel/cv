@@ -1,0 +1,13 @@
+.header {
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

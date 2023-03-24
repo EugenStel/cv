@@ -1,0 +1,58 @@
+.education {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.edu_header {
+    padding-top: 120px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.edu_header_span {
+    padding: 20px;
+    border: var(--border-header-width) solid transparent;
+    border-image: linear-gradient(to left top, var(--border-header-color) 10%, transparent 30%, transparent 70%, var(--border-header-color) 90%);
+    border-image-slice: 1;
+}
+
+.vertical_timeline_element_title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.vertical_timeline_element_subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.download_cert {
+    cursor: pointer;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-decoration-color: #ffffff;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 10px;
+}
+
+@media screen and (max-width: 1064px) {
+    .edu_header {
+        font-size: 24px;
+    }
+
+    .edu_header_span {
+        padding: 16px;
+    }
+
+    .vertical_timeline_element_title {
+        font-size: 16px;
+    }
+
+    .vertical_timeline_element_subtitle {
+        font-size: 14px;
+    }
+}

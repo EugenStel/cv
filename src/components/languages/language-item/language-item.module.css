@@ -1,0 +1,45 @@
+.languages_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.languages_item_title {
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.languages_item_level {
+    background-color: rgb(37, 37, 37);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.language_icon {
+    width: 80px;
+    height: auto;
+    transition: transform .2s ease;
+}
+
+.language_icon:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1064px) {
+    .language_icon {
+        width: 70px;
+    }
+
+    .languages_item_level {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .languages_item_title,
+    .languages_item_level {
+        font-size: 14px;
+    }
+}

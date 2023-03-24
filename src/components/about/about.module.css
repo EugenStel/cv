@@ -1,0 +1,283 @@
+.about {
+    max-width: 1400px;
+    margin: 150px auto 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    padding: 0 20px;
+}
+
+.main {
+    line-height: normal;
+}
+
+.fio {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 64px;
+    text-transform: capitalize;
+}
+
+.fio span {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.greet {
+    margin-right: 15px;
+}
+
+.fio .greet::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background: url(./assets/hand.svg) 50% top no-repeat;
+}
+
+.fio .front {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffb400;
+}
+
+.fio .front::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 9px;
+    background: url(./assets/underline.png) 50% top no-repeat;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #ffb400, inset 0 0 10px #ffb400;
+    }
+
+    50% {
+        box-shadow: 0 0 38px #ffb400, inset 0 0 36px #ffb400;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #ffb400, inset 0 0 10px #ffb400;
+    }
+}
+
+.avatar {
+    margin-top: 30px;
+    position: relative;
+    background-color: transparent;
+    border: solid 10px #ffb400;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation: pulse 5s linear infinite;
+}
+
+.avatar img {
+    overflow: hidden;
+    z-index: -100;
+    height: 400px;
+    position: relative;
+    left: 35px;
+    bottom: 18px;
+}
+
+.info {
+    margin-top: 50px;
+}
+
+.add_info {
+    margin-top: 20px;
+}
+
+.download_btn {
+    margin-top: 20px;
+    padding: 16px 56px;
+    outline: none;
+    border: none;
+    background-color: rgb(37, 37, 37);
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    transition: all .2s ease-in;
+    box-shadow: 0 0 10px rgb(204, 204, 204);
+}
+
+.download_btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.about_contact {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contact_link {
+    margin: 0 20px;
+}
+
+.contact_icon_viber,
+.contact_icon_telegram,
+.contact_icon_linkedin,
+.contact_icon_gmail,
+.contact_icon_tel,
+.contact_icon_skype {
+    transition: all .2s ease;
+}
+
+.contact_icon_viber:hover {
+    color: #7d519d;
+}
+
+.contact_icon_telegram:hover {
+    color: #039be6;
+}
+
+.contact_icon_linkedin:hover {
+    color: #0077b7;
+}
+
+.contact_icon_gmail:hover {
+    fill: #f14336;
+}
+
+.contact_icon_tel:hover {
+    fill: #03c7d6;
+}
+
+.contact_icon_skype:hover {
+    color: #00aaf2;
+}
+
+
+@media screen and (max-width: 1120px) {
+    .about {
+        gap: 80px;
+        grid-template-columns: 1.4fr 1fr;
+        margin: 90px auto 0 auto;
+    }
+
+    .fio {
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    .fio span {
+        font-size: 34px;
+    }
+
+    .fio .front {
+        font-size: 34px;
+    }
+
+    .avatar {
+        width: 290px;
+        height: 290px;
+    }
+
+    .avatar img {
+        height: 290px;
+        left: 25px;
+        bottom: 18px;
+    }
+
+    .contact_icon_viber,
+    .contact_icon_telegram,
+    .contact_icon_linkedin,
+    .contact_icon_gmail,
+    .contact_icon_tel,
+    .contact_icon_skype {
+        width: 30px;
+    }
+
+    .contact_link {
+        margin: 0 10px;
+    }
+
+    .download_btn {
+        margin-top: 18px;
+        padding: 14px 54px;
+        font-size: 16px;
+    }
+
+    .about_contact {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .about {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .fio {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .fio span {
+        font-size: 24px;
+    }
+
+    .fio .front {
+        font-size: 24px;
+    }
+
+    .avatar {
+        width: 250px;
+        height: 250px;
+    }
+
+    .avatar img {
+        height: 250px;
+        left: 22px;
+        bottom: 18px;
+    }
+
+    .info {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    
+    .add_info {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .contact_icon_viber,
+    .contact_icon_telegram,
+    .contact_icon_linkedin,
+    .contact_icon_gmail,
+    .contact_icon_tel,
+    .contact_icon_skype {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact_icon_viber,
+    .contact_icon_telegram,
+    .contact_icon_linkedin,
+    .contact_icon_gmail,
+    .contact_icon_tel,
+    .contact_icon_skype {
+        width: 20px;
+    }
+}
