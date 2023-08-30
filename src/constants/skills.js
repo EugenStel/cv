@@ -65,13 +65,13 @@ export const SKILLS = {
         {
             language: 'english',
             icon: eng,
-            level: 'pre-intermediate',
+            level: 'B1',
             id: 11,
         },
         {
             language: 'german',
             icon: ger,
-            level: 'pre-intermediate',
+            level: 'A2',
             id: 22,
         },
     ]
